@@ -9,62 +9,137 @@
 	<meta name="description" content="This is a UI for prospects project">
 	<meta name="keywords" content="football, prospects, fantasy, dynasty">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta name="author" content="Cameron Still">
 </head>
 
 <body>
 	<header>
 		<h1>Prospects Project</h1>
 	</header>
-	<nav class="topnav">
+	<nav class="topnav"> <!-- Start Navigation -->
 		<!-- I want all this to be drop-downs that contain links to each class year and the full list as well-->
-		<a class="home" href="#WRS">WRS</a>
-		<a href="">RBS</a>
-		<a href="">TES</a>
-	</nav>
+		<ul>
+			<li><a id="WRSnav" href="#WRS">WRS</a></li>
+			<li><a id="RBSnav" href="">RBS</a></li>
+			<li><a id="RBSnav" href="">RBS</a></li>
+			<li><a id="aboutNav" href="">About</a></li>
+		</ul>
+	</nav> <!-- End Navigation -->
 	<br><br>
 	<div>
-		<h3>About</h3>
-		<p>
-			This is a web-app to create, grade, and maintain a database for prospects entering the NFL
-		</p>
+		<h1 id="prospects-header">Input Prospect</h1>
 	</div>
 	<br>
-	<div id="WRS">
+	<div id="WRSform" class="front-page-prospect-form">
 		<h2>
 			WRS
 		</h2>
 		<form>
 			Name: <input type="text">
 			<br>
-			Position: <input type="text">
-			<br><br><br>
-			<button>Submit</button> <!-- This button will eventually submit all the above information as a new WR via the WR api route-->
+			<span class="prospect-form-subheader">Production</span>
+			<br>
+			Yards/Team Pass Attempt: <input type="number">
+			<br>
+			Market Share of Targets: <input type="number">
+			<br>
+			Breakout Year: <input type="number">
+			<br>
+			Dominator Rating: <input type="number">
+			<br>
+			<span class="prospect-form-subheader">Pedigree</span>
+			<br>
+			Draft Capital: <input type="number">
+			<br>
+			Film Grade: <input type="number">
+			<br>
+			Declaration Year: <input type="number">
+			<br>
+			Rivals Grade: <input type="number">
+			<br>
+			Confrence: <input type="text">
+			<br>
+			<span class="prospect-form-subheader">Physical Traits</span>
+			<br>
+			Height: <input type="number">
+			<br>
+			Weight: <input type="number">
+			<br>
+			RAS: <input type="number">
+			<br>
+			<button>Submit</button>
+			<!-- This button will eventually submit all the above information as a new WR via the WR api route-->
 		</form>
 	</div>
-	<div id="RBS">
+	<div id="RBSform" class="front-page-prospect-form">
 		<h2>
 			RBS
 		</h2>
 		<form>
 			Name: <input type="text">
 			<br>
-			Position: <input type="">
+			<span class="prospect-form-subheader">Production</span>
 			<br>
-			<br><br><br>
+			Yards Created: <input type="number">
+			<br>
+			Yards Over Expectation: <input type="number">
+			<br>
+			Dominator Rating: <input type="number">
+			<br>
+			Target Market Share: <input type="number">
+			<br>
+			Two Years Production: <input type="text">
+			<br>
+			Breakout Year: <input type="number">
+			<br>
+			<span class="prospect-form-subheader">Pedigree</span>
+			<br>
+			Draft Capital: <input type="number">
+			<br>
+			Film Grade: <input type="number">
+			<br>
+			Rivals Grade: <input type="number">
+			<br>
+			Confrence: <input type="text">
+			<br>
+			<span class="prospect-form-subheader">Physical Traits</span>
+			<br>
+			Weight: <input type="number">
+			BMI: <input type="number">
+			Speed Score: <input type="number">
+			RAS: <input type="number">
+			<br>
 			<button>Submit</button> <!-- same as above for this button but for RB-->
 		</form>
 	</div>
-	<div id="TES">
+	<div id="TESform" class="front-page-prospect-form">
 		<h2>
 			TES
 		</h2>
 		<form>
 			Name: <input type="text">
 			<br>
-			Position: <input type="text">
+			<span class="prospect-form-subheader">Production</span>
 			<br>
-			<br><br><br>
+			Yards/Reception: <input type="number">
+			<br>
+			Weighted Dominator Rating: <input type="number">
+			<br>
+			Breakout Year: <input type="number">
+			<br>
+			<span class="prospect-form-subheader">Pedigree</span>
+			<br>
+			Draft Capital: <input type="number">
+			Film Grade: <input type="number">
+			Declare Year: <input type="number">
+			Confrence: <input type="text">
+			<br>
+			<span class="prospect-form-subheader">Physical Traits</span>
+			<br>
+			Height: <input type="number">
+			Weight: <input type="number">
+			40-Yard Dash: <input type="number">
+			RAS: <input type="number">
 			<button>Submit</button><!-- same as above for this button but for TE-->
 		</form>
 	</div>
