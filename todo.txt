@@ -1,16 +1,25 @@
-Use bootstrap alerts to create alerts for deletion and creation (2nd bootstrap video like 28 minutes in)
- - or for delete...use modal.  have a button that just shows the modal then have a button in the modal that has the actuall delete logic.  THis is in bootstrap video 2 (around an hour)
-   -- and remember that you create a button that relates to this modal...the modal is waht shows up when you press the button
-
-obviously use angular to connect my API with my UI (angular videos)
-
+BACK END:
 
 code some sort of algorithim to produce my grades
 
 
+FRONT END:
 
+obviously use angular to connect my API with my UI (angular videos)
+
+build out charts for each year of prospects (look at bootstrap chart docs for this) <--- add delete here?
 
 maybe mess aroudn with bootstrap colors...customize primary, secondary, warning, info, light, dark, etc. 
+
+maybe floating labels in my forms are a way to get everything nice and centered (2nd bootstrap video 01:47:00 in)
+
+maybe provide bootstrap validation for form -- look in cheatsheet
+
+Use bootstrap alerts to create alerts for deletion and creation (2nd bootstrap video like 28 minutes in)
+ - or for delete...use modal.  have a button that just shows the modal then have a button in the modal that has the actuall delete logic.  THis is in bootstrap video 2 (around an hour)
+   -- and remember that you create a button that relates to this modal...the modal is waht shows up when you press the button
+
+
 
 
 
