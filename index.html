@@ -5,7 +5,7 @@
 	<title>Prospects Project UI</title>
 	<meta charset="UTF-8">
 	<link rel="icon" href="./favicon.jpeg">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="description" content="This is a UI for prospects project">
 	<meta name="keywords" content="football, prospects, fantasy, dynasty">
@@ -17,15 +17,81 @@
 	<header>
 		<h1>Prospects Project</h1>
 	</header>
-	<nav class="topnav"> <!-- Start Navigation -->
-		<!-- I want all this to be drop-downs that contain links to each class year and the full list as well-->
-		<ul>
-			<li><a id="WRSnav" href="#WRS">Receivers</a></li>
-			<li><a id="RBSnav" href="">Running Backs</a></li>
-			<li><a id="RBSnav" href="">Tight Ends</a></li>
-			<li><a id="aboutNav" href="">About</a></li>
-		</ul>
-	</nav> <!-- End Navigation -->
+	<nav class="navbar navbar-expand-lg bg-body-secondary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Recievers
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">2016</a></li>
+							<li><a class="dropdown-item" href="#">2017</a></li>
+							<li><a class="dropdown-item" href="#">2018</a></li>
+							<li><a class="dropdown-item" href="#">2019</a></li>
+							<li><a class="dropdown-item" href="#">2020</a></li>
+							<li><a class="dropdown-item" href="#">2021</a></li>
+							<li><a class="dropdown-item" href="#">2022</a></li>
+							<li><a class="dropdown-item" href="#">2023</a></li>
+							<li><a class="dropdown-item" href="#">2024</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">2016-2024</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Running Backs
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">2017</a></li>
+							<li><a class="dropdown-item" href="#">2018</a></li>
+							<li><a class="dropdown-item" href="#">2019</a></li>
+							<li><a class="dropdown-item" href="#">2020</a></li>
+							<li><a class="dropdown-item" href="#">2021</a></li>
+							<li><a class="dropdown-item" href="#">2022</a></li>
+							<li><a class="dropdown-item" href="#">2023</a></li>
+							<li><a class="dropdown-item" href="#">2024</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">2017-2024</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Tight Ends
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">2017</a></li>
+							<li><a class="dropdown-item" href="#">2018</a></li>
+							<li><a class="dropdown-item" href="#">2019</a></li>
+							<li><a class="dropdown-item" href="#">2020</a></li>
+							<li><a class="dropdown-item" href="#">2021</a></li>
+							<li><a class="dropdown-item" href="#">2022</a></li>
+							<li><a class="dropdown-item" href="#">2023</a></li>
+							<li><a class="dropdown-item" href="#">2024</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">2017-2024</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+</div>
 	<br><br>
 	<div>
 		<h1 id="prospects-header">Input Prospect</h1>
@@ -36,6 +102,7 @@
 		<h2>
 			Wide Receiver
 		</h2>
+		<br>
 		<form>
 			Name: <input type="text">
 			<br><br>
@@ -70,7 +137,7 @@
 			RAS: <input type="number">
 			<br><br>
 			<div class="prospect-form-submit-button">
-				<button class="prospect-form-submit-button">Submit</button>
+				<button type="submit" class="btn btn-outline-light btn-lg" class="prospect-form-submit-button">Create Reciever</button>
 			</div>
 			
 			<!-- This button will eventually submit all the above information as a new WR via the WR api route-->
@@ -80,6 +147,7 @@
 		<h2>
 			Running Back
 		</h2>
+		<br>
 		<form>
 			Name: <input type="text">
 			<br><br>
@@ -118,7 +186,7 @@
 			RAS: <input type="number">
 			<br><br>
 			<div class="prospect-form-submit-button">
-				<button class="prospect-form-submit-button">Submit</button>
+				<button type="submit" class="btn btn-outline-light btn-lg" class="prospect-form-submit-button" >Create Running Back</button>
 			</div>
 			 <!-- same as above for this button but for RB-->
 		</form>
@@ -127,6 +195,7 @@
 		<h2>
 			Tight End
 		</h2>
+		<br>
 		<form>
 			Name: <input type="text">
 			<br><br>
@@ -159,12 +228,13 @@
 			RAS: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places">
 			<br><br>
 			<div class="prospect-form-submit-button">
-				<button type="submit">Submit</button> <!-- same as above for this button but for TE-->
+				<button type="submit" class="btn btn-outline-light btn-lg" class="prospect-form-submit-button">Create Tight End</button> <!-- same as above for this button but for TE-->
 			</div>
 		</form>
 	</div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
 

@@ -1,0 +1,16 @@
+Use bootstrap alerts to create alerts for deletion and creation (2nd bootstrap video like 28 minutes in)
+
+obviously use angular to connect my API with my UI (angular videos)
+
+style nav bar and add dropdowns--dropdowns will link to year and overall list (I think this is bootstrap video 1 and 2)
+
+code some sort of algorithim to produce my grades
+
+
+
+
+maybe mess aroudn with bootstrap colors...customize primary, secondary, warning, info, light, dark, etc. 
+
+
+
+
