@@ -1,8 +1,9 @@
 Use bootstrap alerts to create alerts for deletion and creation (2nd bootstrap video like 28 minutes in)
+ - or for delete...use modal.  have a button that just shows the modal then have a button in the modal that has the actuall delete logic.  THis is in bootstrap video 2 (around an hour)
+   -- and remember that you create a button that relates to this modal...the modal is waht shows up when you press the button
 
 obviously use angular to connect my API with my UI (angular videos)
 
-style nav bar and add dropdowns--dropdowns will link to year and overall list (I think this is bootstrap video 1 and 2)
 
 code some sort of algorithim to produce my grades
 

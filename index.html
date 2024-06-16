@@ -104,37 +104,37 @@
 		</h2>
 		<br>
 		<form>
-			Name: <input type="text">
+			Name: <input type="text" required>
 			<br><br>
 			<span class="prospect-form-subheader">Production</span>
 			<br>
-			Yards/Team Pass Attempt: <input type="number">
+			Yards/Team Pass Attempt: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places"required>
 			<br>
-			Market Share of Targets: <input type="number">
+			Market Share of Targets: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			Breakout Year: <input type="number">
+			Breakout Year: <input type="number" required>
 			<br>
-			Dominator Rating: <input type="number">
+			Dominator Rating: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
 			<span class="prospect-form-subheader">Pedigree</span>
 			<br>
-			Draft Capital: <input type="number">
+			Draft Capital: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			Film Grade: <input type="number">
+			Film Grade: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			Declaration Year: <input type="number">
+			Declaration Year: <input type="number" required>
 			<br>
-			Rivals Grade: <input type="number">
+			Rivals Grade: <input type="number" required>
 			<br>
-			Confrence: <input type="text">
+			Confrence: <input type="text" required>
 			<br>
 			<span class="prospect-form-subheader">Physical Traits</span>
 			<br>
-			Height: <input type="number">
+			Height: <input type="number" required> <!-- again 6010 format needs to be validated here-->
 			<br>
-			Weight: <input type="number">
+			Weight: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			RAS: <input type="number">
+			RAS: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br><br>
 			<div class="prospect-form-submit-button">
 				<button type="submit" class="btn btn-outline-light btn-lg" class="prospect-form-submit-button">Create Reciever</button>
@@ -149,41 +149,41 @@
 		</h2>
 		<br>
 		<form>
-			Name: <input type="text">
+			Name: <input type="text" required>
 			<br><br>
 			<span class="prospect-form-subheader">Production</span>
 			<br>
-			Yards Created: <input type="number">
+			Yards Created: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			Yards Over Expectation: <input type="number">
+			Yards Over Expectation: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			Dominator Rating: <input type="number">
+			Dominator Rating: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			Target Market Share: <input type="number">
+			Target Market Share: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			Two Years Production: <input type="text">
+			Two Years Production: <input type="text" required> <!-- add validation for only "Y" or "N" being supported-->
 			<br>
-			Breakout Year: <input type="number">
+			Breakout Year: <input type="number" required>
 			<br>
 			<span class="prospect-form-subheader">Pedigree</span>
 			<br>
-			Draft Capital: <input type="number">
+			Draft Capital: <input type="text" required>
 			<br>
-			Film Grade: <input type="number">
+			Film Grade: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			Rivals Grade: <input type="number">
+			Rivals Grade: <input type="number" required>
 			<br>
-			Confrence: <input type="text">
+			Confrence: <input type="text" required>
 			<br>
 			<span class="prospect-form-subheader">Physical Traits</span>
 			<br>
-			Weight: <input type="number">
+			Weight: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places"required> 
 			<br>
-			BMI: <input type="number">
+			BMI: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			Speed Score: <input type="number">
+			Speed Score: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			RAS: <input type="number">
+			RAS: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br><br>
 			<div class="prospect-form-submit-button">
 				<button type="submit" class="btn btn-outline-light btn-lg" class="prospect-form-submit-button" >Create Running Back</button>
@@ -197,35 +197,35 @@
 		</h2>
 		<br>
 		<form>
-			Name: <input type="text">
+			Name: <input type="text" required>
 			<br><br>
 			<span class="prospect-form-subheader">Production</span>
 			<br>
-			Yards/Reception: <input type="number">
+			Yards/Reception: <input type="number" required>
 			<br>
-			Weighted Dominator Rating: <input type="number">
+			Weighted Dominator Rating: <input type="number" required>
 			<br>
-			Breakout Year: <input type="number">
+			Breakout Year: <input type="number" required>
 			<br>
 			<span class="prospect-form-subheader">Pedigree</span>
 			<br>
-			Draft Capital: <input type="text">
+			Draft Capital: <input type="text" required>
 			<br>
-			Film Grade: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places">
+			Film Grade: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			Declare Year: <input type="number">
+			Declare Year: <input type="number" required>
 			<br>
-			Confrence: <input type="text">
+			Confrence: <input type="text" required>
 			<br>
 			<span class="prospect-form-subheader">Physical Traits</span>
 			<br>
-			Height: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places">
+			Height: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required> <!-- this needs to be in 6010 format...and that validation-->
 			<br>
-			Weight: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places">
+			Weight: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			40-Yard Dash: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places">
+			40-Yard Dash: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br>
-			RAS: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places">
+			RAS: <input type="text" pattern="\d+(\.\d{1,2})?" title="input two or less decimal places" required>
 			<br><br>
 			<div class="prospect-form-submit-button">
 				<button type="submit" class="btn btn-outline-light btn-lg" class="prospect-form-submit-button">Create Tight End</button> <!-- same as above for this button but for TE-->
